@@ -1,0 +1,15 @@
+article {
+    h2 {
+        color: black;
+        text-align: center;
+        margin-bottom: 0.5rem;
+    }
+
+}
+
+.textos {
+    p {
+        color: var(--color-text-light);
+        justify-content: justify;
+    }
+}

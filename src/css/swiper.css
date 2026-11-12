@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+#cursos {
+  min-height: 80vh;
+  background-color: var(--color-bg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  padding: 64px 5%;
+}
+
+.section-header {
+  text-align: center;
+}
+
+.section-header h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-secondary);
+  margin-bottom: 0.5rem;
+}
+
+.section-header p {
+  color: var(--color-text-light);
+  font-size: 1.05rem;
+}
+
+/* ========== SWIPER ========== */
+.swiper {
+  width: 100%;
+  max-width: 1200px;
+  padding-bottom: 50px !important; /* espaço para a paginação */
+}
+
+.swiper-slide {
+  background: var(--color-white);
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.06);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  height: auto;              /* remove altura fixa */
+  min-height: 280px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.swiper-slide:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.12);
+}
+
+/* Conteúdo do card */
+.card-header h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--color-text);
+  line-height: 1.4;
+  margin-bottom: 8px;
+}
+
+.descricao {
+  font-size: 0.85rem;
+  color: var(--color-text-light);
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+
+
+.btn-curso {
+  display: inline-block;
+  width: fit-content;
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 8px 20px;
+  border-radius: 40px;
+  transition: all 0.3s ease;
+}
+
+.btn-curso:hover {
+  background-color: var(--color-primary-dark);
+  color: white;
+  box-shadow: 0 4px 12px rgba(52, 211, 153, 0.35);
+}
+
+.dados {
+  font-size: 0.85rem;
+  color: var(--color-text-light);
+}
+
+.dados span {
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.card-rate i {
+  color: var(--color-star);
+  font-size: 0.95rem;
+}
+
+/* Botões de navegação */
+.swiper-button-prev,
+.swiper-button-next {
+  width: 42px !important;
+  height: 42px !important;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 4px 15px rgba(15, 23, 42, 0.12);
+  color: var(--color-primary) !important;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover{
+  transition: 0.4s;
+  background: var(--color-primary);
+  color: white !important;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 16px !important;
+  font-weight: 700;
+}
+
+.swiper-button-prev {
+  left: 0;
+}
+
+.swiper-button-next {
+  right: 0;
+}
+
+/* Paginação */
+.swiper-pagination-bullet {
+  background: #cbd5e1;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--color-primary);
+  width: 24px;
+  border-radius: 10px;
+}

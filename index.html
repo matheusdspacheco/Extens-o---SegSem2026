@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clima em Ação | Conscientização</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Isso importa uma série de ferramentas para HTML, CSS e JS -->
+  <link rel="shortcut icon" href="src/images/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="src/css/style.css">
+</head>
+
+<body>
+
+  <header id="header">
+    <!-- Navegação -->
+    <nav class="nav">
+      <a href="index-extensão.html" class="logo">Clim<span>Ativa</span></a>
+
+      <ul id="nav-links">
+        <li><a href="ia-clima.html">IA e o Clima</a></li>
+        <li><a href="referencias.html">Referências Bibliográficas</a></li>
+        <li><a href="https://brasil.un.org/pt-br/sdgs/13" target="_blank">ODS 13</a></li>
+      </ul>
+
+      <button class="btn btn-mobile">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </nav>
+
+    <!-- Conteúdo do Hero -->
+    <div class="hero-content">
+      <div class="badge">Campanha 2026 · Urgência Climática</div>
+
+      <h1 class="hero-title">
+        O planeta não pode esperar.<br>
+        <span>A mudança começa agora.</span>
+      </h1>
+
+      <p class="hero-subtitle">
+        Junte-se a milhões de pessoas que estão transformando consciência em ação real contra as mudanças climáticas.
+      </p>
+
+      <!--<div class="hero-actions">
+        <a href="" class="btn-primary">ODS 13</a>
+        <a href="#problema" class="btn-secondary">Entenda o problema</a>
+      </div>-->
+
+      <!-- Indicador de scroll -->
+      <div class="scroll-indicator">
+        <div class="mouse"></div>
+        <span>Role para explorar</span>
+      </div>
+    </div>
+
+  </header>
+
+  <main>
+    <section id="cursos">
+      <article class="textos">
+        <h2>Mudanças Climáticas</h2>
+        <p>
+          As Mudanças climáticas são alterações nos padrões de clima e temperatura do planeta ao longo do tempo, podendo
+          ser causadas por processos naturais ou decorrentes, principalmente em nossa época, da atividade
+          humana.<br><br>
+          Antes de tudo, precisamos entender algo muito importante: <span class="Bold">o que é o Efeito
+            Estufa?</span><br><br>
+
+          Precisamos entender que o efeito estufa é, antes de tudo, um processo natural. Os chamados <span
+            class="Bold">Gases de Efeito Estufa</span> ou <span class="Bold">GEEs</span> (dióxido de carbono, óxido
+          nitroso, metano e vapor d’água) presentes na atmosfera retém parte
+          do calor vindo do sol, garantido a manutenção da temperatura em padrões adequados para a vida no planeta. Sem
+          ele, a temperatura média na Terra seria algo entorno de -20°C.<br><br>
+
+
+        </p>
+      </article>
+
+      <div class="swiper"> <!-- GEEs -->
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"> <!-- CO2 -->
+            <div class="card-header">
+              <h3>Dióxido de Carbono (CO2)</h3>
+              <p class="descricao">Um componente vital da atmosfera, o dióxido de carbono (CO2) é liberado por processos
+                naturais (como erupções vulcânicas) e por atividades humanas, como queima de combustíveis fósseis e
+                desmatamento.</p>
+              <p class="dados">Extraído de:<span><a href="https://science.nasa.gov/climate-change/causes/"
+                    target="_blank">The Causes of Climate Change (Nasa)</a></span></p>
+            </div>
+
+            <div class="card-body">
+              <img class="icons" src="src/images/CO2.png" alt="" class="imagem-clicavel" onclick="abrirPopup(this.src)">
+              <p class="dados">Imagem gerada por Inteligência Artificial</p>
+            </div>
+          </div>
+
+          <div class="swiper-slide"> <!-- CH4 -->
+            <div class="card-header">
+              <h3>Metano (Ch4)</h3>
+              <p class="descricao">Como muitos gases atmosféricos, o metano vem de fontes naturais e causadas pelo homem. O metano vem da degradação da matéria vegetal em áreas úmidas e também é liberado de aterros sanitários e do cultivo de arroz. Animais de criação emitem metano da digestão e do esterco. Vazamentos da produção e transporte de combustíveis fósseis são outra grande fonte de metano, e o gás natural contém 70% a 90% de metano.</p>
+              <p class="dados">Extraído de:<span><a href="https://science.nasa.gov/climate-change/causes/"
+                    target="_blank">The Causes of Climate Change (Nasa)</a></span></p>
+            </div>
+
+            <div class="card-body">
+              <img class="icons" src="src/images/CH4 Mol.png" alt="" class="imagem-clicavel"
+                onclick="abrirPopup(this.src)">
+              <p class="dados">Imagem gerada por Inteligência Artificial</p>
+            </div>
+          </div>
+
+          <div class="swiper-slide"> <!-- N2O -->
+            <div class="card-header">
+              <h3>Óxido Nitroso (N2O)</h3>
+              <p class="descricao">Um potente gás de efeito estufa produzido pelas práticas agrícolas,  é liberado durante a produção e uso de fertilizantes comerciais e orgânicos. O óxido nitroso também vem da queima de combustíveis fósseis e vegetação, e aumentou 18% nos últimos 100 anos.</p>
+              <p class="dados">Extraído de:<span><a href="https://science.nasa.gov/climate-change/causes/"
+                    target="_blank">The Causes of Climate Change (Nasa)</a></span></p>
+            </div>
+
+            <div class="card-body">
+              <img class="icons" src="src/images/Untitled-1" alt="" class="imagem-clicavel"
+                onclick="abrirPopup(this.src)">
+              <p class="dados">Imagem gerada por Inteligência Artificial</p>
+            </div>
+          </div>
+
+
+        </div>
+
+        <!-- Controles -->
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <!-- Causas -->
+          <div class="swiper-slide">
+            <div class="card-header">
+              <h3>Causas</h3>
+              <!--<p class="descricao"></p>-->
+            </div>
+
+            <div class="card-body">
+              <img class="icons" src="src/images/clean-professional-infographic (1).jpg" alt="" class="imagem-clicavel"
+                onclick="abrirPopup(this.src)">
+              <p class="dados">Imagem gerada por Inteligência Artificial</p>
+            </div>
+          </div>
+
+          <!-- Consequências -->
+          <div class="swiper-slide">
+            <div class="card-header">
+              <h3>Consequências</h3>
+              <!--<p class="descricao"></p>-->
+            </div>
+
+            <div class="card-body">
+              <img class="icons" src="src/images/effects/lBXY6.jpg" alt="" class="imagem-clicavel"
+                onclick="abrirPopup(this.src)">
+              <p class="dados">Imagem gerada por Inteligência Artificial</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Controles -->
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+
+
+      <div class="section-header">
+        <h2>Dados</h2>
+        <p>Abaixo, você poderá conferir aluns resultados de estudos de diversos centros de pesquisa.</p>
+      </div>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+
+          <!-- CARD 1 -->
+          <div class="swiper-slide">
+            <div class="card-header">
+              <h3>Média Anual de Metano - CH4 (1983-Jun/2026)</h3>
+              <p class="descricao">O metano é um potente gás de efeito estufa que retém calor. A quantidade de metano
+                na atmosfera aumentou nas últimas décadas, conforme observado por medições científicas. Estima-se que
+                60% das emissões atuais de metano sejam resultado de atividades humanas.</p>
+            </div>
+
+            <div class="card-body">
+              <img src="src/images/CH4.png" alt="" class="imagem-clicavel" onclick="abrirPopup(this.src)">
+              <p class="dados">Dados: <span><a href="https://science.nasa.gov/earth/explore/earth-indicators/methane/"
+                    target="_blank">Methane -
+                    Earth Indicator (Nasa)</a></span></p>
+            </div>
+          </div>
+
+          <!-- CARD 2 -->
+          <div class="swiper-slide">
+            <div class="card-header">
+              <h3>Temperatura Global (1980-2025)</h3>
+              <p class="descricao">Os 10 anos mais recentes são os mais quentes já registrados.</p>
+            </div>
+
+            <div class="card-body">
+              <img src="src/images/GlobalTemp.png" alt="" class="imagem-clicavel" onclick="abrirPopup(this.src)">
+              <p class="dados">Fonte: <span><a
+                    href="https://science.nasa.gov/earth/explore/earth-indicators/global-temperature/"
+                    target="_blank">Global Temperature - Earth Indicator (Nasa)</a></span></p>
+            </div>
+          </div>
+
+          <!-- CARD 3 -->
+          <div class="swiper-slide">
+            <div class="card-header">
+              <h3>Dióxido de Carbono (1958-Set/2026)</h3>
+              <p class="descricao">A quantidade de dióxido de carbono na atmosfera da Terra aumentou acentuadamente
+                nos últimos 100 anos, conforme medido a partir do solo e dos satélites. Como o dióxido de carbono é um
+                gás de efeito estufa, esse aumento aqueceu o planeta.</p>
+            </div>
+
+            <div class="card-body">
+              <img src="src/images/PPM.png" alt="" class="imagem-clicavel" onclick="abrirPopup(this.src)">
+              <p class="dados">Dados: <span><a
+                    href="https://science.nasa.gov/earth/explore/earth-indicators/carbon-dioxide/"
+                    target="_blank">Carbon Dioxide - Earth Indicator (Nasa)</a></span></p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Controles -->
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+
+
+      <article class="textos">
+        <h2>No Brasil</h2>
+        <p>
+          <span class="Bold">Saúde:</span> Essas alterações ambientais e climáticas influenciam a disseminação e o
+          comportamento de diversas doenças. O
+          aumento das temperaturas médias e as variações nos índices pluviométricos alteram a dinâmica de vetores e
+          hospedeiros, <abbr title="Climate change, thermal anomalies, and the recent progression of dengue in Brazil - Nature Scientific Reports - Acesso em 27 de outubro de 2026">
+            provocando a expansão geográfica de arboviroses — <em>como dengue, zika e chikungunya</em> — para áreas
+            antes não afetadas
+          </abbr>, além de agravar problemas respiratórios, cardiovasculares e de saúde pública associados ao
+          estresse térmico e à escassez de água potável.
+
+          <br><br>
+
+          <span class="Bold">Segurança Alimentar e Agricultura:</span> O aumento das temperaturas mínimas e máximas e a
+          irregularidade das chuvas
+          afetam severamente a agropecuária. Registram-se impactos diretos como o abortamento de flores no café, laranja
+          e feijão, além de perdas expressivas em safras de grãos, antecipando cenários pessimistas de quebra de
+          produção e rentabilidade. Como caminhos de sustentabilidade, destacam-se a adoção de sistemas integrados de
+          produção (como lavoura-pecuária-floresta) e o melhoramento genético vegetal e animal.
+
+          <br><br>
+
+          <span class="Bold">Segurança Hídrica:</span> Apesar de deter 14% da água doce do planeta, o Brasil enfrenta
+          forte assimetria na
+          distribuição espacial dos recursos e desafios associados à urbanização e à qualidade da água. Eventos extremos
+          de seca (especialmente no Semiárido e no Sudeste) e cheias extremas (como na Região Norte) evidenciam a
+          vulnerabilidade do abastecimento público, da irrigação e da matriz energética, que é predominantemente
+          hidrelétrica. O documento reforça a necessidade de soluções integradas, gestão antecipada e proteção de
+          ecossistemas aquáticos.
+
+          <br><br>
+
+          <span class="Bold">Segurança Energética:</span> Com uma matriz energética e elétrica altamente renovável —
+          impulsionada pela
+          hidroeletricidade, biomassa e pelo avanço eólico e solar —, o Brasil possui um diferencial competitivo global.
+          No entanto, a crise climática global exige o cumprimento de compromissos no âmbito do Acordo de Paris (NDC) e
+          um planejamento de médio e longo prazo que considere os impactos das emissões e das alterações climáticas na
+          capacidade de geração energética.
+
+          <br><br>
+
+          <span class="Bold">Eventos Extremos, Urbanização e Desenvolvimento Regional:</span> Com cerca de 80% da
+          população concentrada em áreas
+          urbanas, as cidades brasileiras estão na linha de frente dos desafios climáticos. Eventos hidrometeorológicos
+          extremos (inundações, enxurradas, deslizamentos e secas prolongadas) geram impactos humanos e prejuízos
+          econômicos de larga escala. As diretrizes de sustentabilidade envolvem saneamento, eficiência hídrica,
+          investimentos em transporte público, expansão de áreas verdes e planejamento urbano sensível aos riscos.
+
+          <br><br>
+
+          <span class="Bold">Biodiversidade e Ecossistemas:</span> O Brasil abriga uma das maiores biodiversidades do
+          planeta, fortemente
+          vulnerável às mudanças no uso da terra, ao desmatamento, ao aumento de CO2 atmosférico e à elevação do nível
+          do mar. A perda de cobertura vegetal em biomas como Amazônia, Cerrado e Mata Atlântica compromete serviços
+          ecossistêmicos essenciais, como a ciclagem de chuvas, a poluição agrícola e o sequestro de carbono. As
+          soluções apontam para a conservação e restauração ecológica baseada em abordagens socioecológicas, além de
+          incentivos por serviços ambientais.
+
+          <br><br>
+        </p>
+      </article>
+    </section>
+
+    <footer class="site-footer">
+      <div class="footer-content">
+        <p>© 2026 ClimAtiva — <span>Matheus de Sousa Pacheco</span></p>
+      </div>
+    </footer>
+  </main>
+
+  <!-- O Popup (Lightbox) -->
+  <div id="popup" class="popup" onclick="fecharPopup()">
+    <span class="fechar">&times;</span>
+    <img id="imagem-popup" src="" alt="Imagem ampliada">
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="src/js/script.js"></script>
+  <script src="src/js/carousel.js"></script>
+  <script src="src/js/CO2.js"></script>
+  <script src="src/js/img-popup.js"></script>
+</body>
+
+</html>

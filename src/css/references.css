@@ -1,0 +1,121 @@
+.references {
+  background: #0f172a;
+  padding: 6rem 5%;
+  color: #f8fafc;
+}
+
+.references-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+
+.section-tag {
+  display: inline-block;
+  background: rgba(52, 211, 153, 0.15);
+  color: #34d399;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.35rem 0.9rem;
+  border-radius: 9999px;
+  margin-bottom: 1rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.references .section-header h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: #f8fafc;
+}
+
+.section-header p {
+  color: #94a3b8;
+  font-size: 1.05rem;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* Lista de referências */
+.references-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.reference-item {
+  display: flex;
+  gap: 1.5rem;
+  padding: 1.5rem 1.75rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 16px;
+  transition: all 0.3s ease;
+}
+
+.reference-item:hover {
+  background: rgba(52, 211, 153, 0.06);
+  border-color: rgba(52, 211, 153, 0.2);
+  transform: translateX(6px);
+}
+
+.reference-number {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #34d399;
+  min-width: 40px;
+  opacity: 0.8;
+}
+
+.reference-content h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #f1f5f9;
+  margin-bottom: 0.4rem;
+  line-height: 1.4;
+}
+
+.reference-meta {
+  font-size: 0.9rem;
+  color: #94a3b8;
+  margin-bottom: 0.75rem;
+}
+
+.reference-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #34d399;
+  text-decoration: none;
+  transition: gap 0.25s ease;
+}
+
+.reference-link:hover {
+  gap: 0.65rem;
+}
+
+.reference-link i {
+  font-size: 0.8rem;
+}
+
+/* Responsivo */
+@media (max-width: 640px) {
+  .reference-item {
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 1.25rem;
+  }
+
+  .reference-number {
+    font-size: 1.1rem;
+  }
+}

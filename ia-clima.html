@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clima em Ação | Conscientização</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Isso importa uma série de ferramentas para HTML, CSS e JS -->
+  <link rel="shortcut icon" href="src/images/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="src/css/style.css">
+</head>
+
+<body>
+
+  <header id="header-secondary">
+    <!-- Navegação -->
+    <nav class="nav">
+      <a href="index.html" class="logo">Clim<span>Ativa</span></a>
+
+      <ul id="nav-links">
+        <li><a href="ia-clima.html">IA e o Clima</a></li>
+        <li><a href="referencias.html">Referências Bibliográficas</a></li>
+        <li><a href="https://brasil.un.org/pt-br/sdgs/13" target="_blank">ODS 13</a></li>
+      </ul>
+
+      <button class="btn btn-mobile">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="cursos">
+      <article class="textos">
+        <h2>O Papel da Inteligência Artificial Mediante as Mudanças Climáticas</h2>
+        <p>
+          O impacto da Inteligência Artificial é bastante curioso. Ela é, ao mesmo tempo, inimiga e aliada do clima.
+          Enquanto ela impacta consideravelmente o clima, também auxilia na redução do impacto de outras atividades.<br><br>
+          Como isso é possível? Vejamos a seguir.<br><br>
+        </p>
+
+        <h2>IA Como Inimiga</h2>
+        <p>
+          Modelos de Inteligência Artificial dependem primariamente de grandes Datacenters. Estes são construções que
+          abrigam servidores, sistemas de armazenamento, equipamentos de rede e outros ítens correlatos.<br><br>
+          Todos estes equipamentos requerem uso de energia elétrica para seu funcionamento. O consumo médio se dá da
+          seguinte forma:<br><br>
+        </p>
+        <ul class="topics">
+          <li><span class="Bold">Servidores: </span>Cerca de 60% da demanda total.</li>
+          <li><span class="Bold">Sistemas de Armazenamento: </span>Cerca de 5% da demanda.</li>
+          <li><span class="Bold">Equipamentos de Rede: </span>Cerca de 5% da demanda</li>
+        </ul>
+        <p>
+          <br>
+          Para manutenção da disponibilidade, todos estes equipamentos precisam permanecer ligados 24 horas por dia, sete dias por semana. Como consequencia, todo esse conjunto sofrerá com aumento da temperatura. Sendo assim, serão necessários equipamentos para realizar o resfriamento, que serão responsáveis por um consumo entre 7% a 30%.<br><br>
+        </p>
+
+        <p>
+          Segundo a <span class="Bold">IEA (International Energy Agency)</span>, O carvão, com uma participação de cerca de 30%, é a maior fonte de eletricidade, embora isso varie significativamente de região para região, sendo a maior contribuição encontrada na China. As renováveis – principalmente eólica, solar fotovoltaica e hidrelétrica – atualmente fornecem cerca de 27% da eletricidade consumida pelos data centers globalmente. O gás natural é a terceira maior fonte hoje, atendendo a 26% da demanda, seguido pela nuclear com 15%.
+        </p>
+
+        <h2>IA Como Aliada</h2>
+
+        <p>
+          Em contrapartida, a IA está sendo utilizada justamente para a redução das emissões.<br><br>
+          Ela é capaz de identificar mais facilmente vazamentos em operações de petróleo e gás visando agilizar os devidos reparos, aumenta a eficiência de usinas termoelétricas e processos industriais, monitorar desmatamentos e mudança do uso da terra. <br><br>
+          Outro uso importante é seu uso quanto a previsões meteorológicas e climáticas. <br><br>
+          Enquanto modelos tradicionais realizam cálculos complexos e processam dados de satélites e diversos sensores por meio de supercomputadores, sistemas baseados em IA (tais como GraphCast, DeepMind e Pangu-Weather) tem apresentado resultados equivalentes ou por vezes superiores, tomando como base dados históricos e com infraestrutura muito mais enxuta.
+        </p>
+      </article>
+      
+    </section>
+
+
+  </main>
+
+  <!-- O Popup (Lightbox) -->
+  <div id="popup" class="popup" onclick="fecharPopup()">
+    <span class="fechar">&times;</span>
+    <img id="imagem-popup" src="" alt="Imagem ampliada">
+  </div>
+
+<footer class="site-footer">
+  <div class="footer-content">
+    <p>© 2026 ClimAtiva — <span>Matheus de Sousa Pacheco</span></p>
+  </div>
+</footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="src/js/script.js"></script>
+  <script src="src/js/carousel.js"></script>
+  <script src="src/js/CO2.js"></script>
+  <script src="src/js/img-popup.js"></script>
+</body>
+
+</html>
