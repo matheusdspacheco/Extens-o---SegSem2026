@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-#cursos {
+#principal {
   min-height: 80vh;
   background-color: var(--color-bg);
   display: flex;
@@ -27,7 +27,7 @@
   font-size: 1.05rem;
 }
 
-/* ========== SWIPER ========== */
+/*  SWIPER  */
 .swiper {
   width: 100%;
   max-width: 1200px;
